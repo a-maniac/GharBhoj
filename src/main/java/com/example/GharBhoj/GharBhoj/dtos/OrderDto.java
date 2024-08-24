@@ -1,19 +1,15 @@
-package com.example.GharBhoj.GharBhoj.entities;
+package com.example.GharBhoj.GharBhoj.dtos;
 
-import jakarta.persistence.Entity;
 import lombok.Data;
 
 import java.util.List;
 
 @Data
-@Entity
-public class Order {
+public class OrderDto {
 
-    private Long id;
     private Long orderId;
     private List<String> order;
     private Long price;
     private Long driverRating;
     private Long restaurentRating;
-
 }
