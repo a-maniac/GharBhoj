@@ -13,7 +13,8 @@ public class Order {
     private Long orderId;
     private List<String> order;
     private Long price;
+    private String orderLocation;
     private Long driverRating;
-    private Long restaurentRating;
+    private Long restaurantRating;
 
 }

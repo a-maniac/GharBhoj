@@ -5,10 +5,8 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Customer {
+public class FoodItem {
     private Long id;
     private String name;
-    private String email;
-    private String phoneNumber;
-    private String address;
+    private Double price;
 }
