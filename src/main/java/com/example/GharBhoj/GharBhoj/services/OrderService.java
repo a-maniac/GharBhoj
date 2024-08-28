@@ -11,4 +11,6 @@ public interface OrderService {
 
     ResponseEntity<OrderDto> cancelAnOrder(Order order);
 
+    ResponseEntity<OrderDto> changeAddress(Order order);
+
 }
