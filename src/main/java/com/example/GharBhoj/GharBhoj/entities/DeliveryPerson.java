@@ -1,10 +1,10 @@
 package com.example.GharBhoj.GharBhoj.entities;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.*;
+import lombok.Data;
 
+@Data
+@Entity
 public class DeliveryPerson {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

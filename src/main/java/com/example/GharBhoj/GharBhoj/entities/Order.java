@@ -1,9 +1,6 @@
 package com.example.GharBhoj.GharBhoj.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.List;
@@ -18,7 +15,11 @@ public class Order {
     private Long orderId;
     private List<String> order;
     private Long price;
+    private String orderStatus;
     private String orderLocation;
+    @OneToOne
+    @JoinColumn(name = "deliverPerson_id")
+    private DeliveryPerson deliveryPerson;
     private Long driverRating;
     private Long restaurantRating;
 

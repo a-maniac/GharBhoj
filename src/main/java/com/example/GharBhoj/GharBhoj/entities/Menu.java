@@ -7,11 +7,12 @@ import java.util.List;
 
 @Entity
 @Data
+@Table
 public class Menu {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToMany
+    @ManyToOne(fetch = FetchType.LAZY)
     private FoodItem item;
 }
