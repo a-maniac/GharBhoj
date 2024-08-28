@@ -1,4 +1,6 @@
 package com.example.GharBhoj.GharBhoj.services;
 
-public interface RestaurentService {
+
+public interface AuthService {
+
 }
