@@ -13,4 +13,5 @@ public class OrderDto {
     private String orderLocation;
     private Long driverRating;
     private Long restaurantRating;
+    private String orderStatus;
 }
